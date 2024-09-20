@@ -29,15 +29,12 @@
                         <h2>{{dataValues.title}}</h2>
                         <p>{{dataValues.salary}}</p>
                         <span class="new-job-label">Nova</span>
-                        <a class="btn btn-primary">Ver vaga</a>
+                        <a class="btn btn-primary" href="jobs/view/{{dataValues.id}}">Ver vaga</a>
                     </li>
                     {{/each}}
                 </ul>
             </div>
         </div>
     </div>
-    <script>
-    // Converte a variável `jobs` do Handlebars para JSON e imprime no console
-    console.log('Jobs:', {{{jobs}}});
-    </script>
+   
 </main>

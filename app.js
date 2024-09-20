@@ -53,7 +53,7 @@ app.get('/', async (req, res) => {
       }); 
       console.log('Jobs:', JSON.stringify(jobs,null,2));
       res.render('index', {jobs});
-    } catch (err) {
+    } catch (err) { 
       console.error('Erro ao buscar empregos:', err);
       res.status(500).send('Erro interno do servidor');
     }
